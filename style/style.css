@@ -1,61 +1,68 @@
-.search-bar {
-    margin: 20px;
-    text-align: center;
-    
+html, body {
+  background-color:  #222326;
 }
 
-.search-bar input{
-    width: 75%;
+.heading {
+      text-align: center;
+      color: white;
+      font-family: 'Finger Paint', sans-serif;
+      font-size: 50px;
+      margin-top: 75px;
+    }
     
+.grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
-.video-item img {
-    max-width: 64px
-    
+.cell, .cell-p1, .cell-p2 {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  opacity: .75;
+  background-color:#84bd00;
+  box-shadow: 2px 2px 0px #888888;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
-.video-detail .details{
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    
+.cell-p1 {
+  background-color: white;
+  cursor: default;
 }
 
-.list-group-item {
-    cursor: pointer;
-    
+.cell-p2 {
+  background-color: #000000;
+  cursor: default;
 }
 
-.list-group-item: hover {
-    background-color: #eee;
-    
-    
+.announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 2em;
+  color: white;
 }
-
-/*App Component Style*/
-.App {
-
-text-align: center;
-font-size: 35px;
-margin-top: 20%
-    
-}
-
-.App-title {
-
-font-size: 50px;
-    
-}
-
-.Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds{
-    display: inline;
-    margin: 10px;
-    
-}
-
-.Deadline-input{
-    font-size: 25px;
-    margin: 5px;
-    
+.announcement button {
+  height: 50px;
+  width: 100px;
+  font-size: 0.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: purple;
 }
